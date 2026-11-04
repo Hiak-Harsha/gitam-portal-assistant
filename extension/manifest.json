@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "GITAM GStudent Customizer & Assistant",
+  "version": "2.1",
+  "description": "Custom styling and popup blocker for GStudent Home (Does NOT touch login page)",
+  "permissions": ["storage"],
+  "host_permissions": ["https://gstudent.gitam.edu/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://gstudent.gitam.edu/*"],
+      "exclude_matches": ["*://login.gitam.edu/*"],
+      "js": ["content.js"],
+      "css": ["style.css", "custom_styles.css"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}

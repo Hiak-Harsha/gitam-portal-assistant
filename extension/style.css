@@ -1,0 +1,57 @@
+/* Terminal Window Overlay (Hidden until toggled by Ctrl + `) */
+#gitam-cli-window {
+    position: fixed !important;
+    bottom: 25px !important;
+    right: 25px !important;
+    width: 440px !important;
+    background: #0d1117 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 10px !important;
+    padding: 14px !important;
+    z-index: 2147483647 !important;
+    font-family: Consolas, "Courier New", monospace !important;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.7) !important;
+    display: none;
+    box-sizing: border-box !important;
+}
+
+#gitam-cli-logs {
+    height: 180px !important;
+    overflow-y: auto !important;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    color: #c9d1d9 !important;
+    margin-bottom: 10px !important;
+    background: #161b22 !important;
+    padding: 8px !important;
+    border-radius: 6px !important;
+    border: 1px solid #21262d !important;
+}
+
+#gitam-cli-input {
+    width: 100% !important;
+    background: #161b22 !important;
+    color: #58a6ff !important;
+    border: 1px solid #30363d !important;
+    padding: 8px 12px !important;
+    font-family: Consolas, monospace !important;
+    font-size: 13px !important;
+    outline: none !important;
+    border-radius: 6px !important;
+    box-sizing: border-box !important;
+}
+
+#gitam-cli-input:focus {
+    border-color: #58a6ff !important;
+    box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.2) !important;
+}
+
+/* Ensure annoying announcement popups and backdrops are kept hidden */
+.modal.show,
+.modal-backdrop,
+#announcementModal,
+#notificationModal,
+.swal2-container,
+.fancybox-overlay {
+    display: none !important;
+}

@@ -1,0 +1,63 @@
+/* ==========================================================================
+   🎨 GITAM GStudent Portal - Custom User Stylesheet
+   Edit this file to customize how the portal looks for you!
+   Changes apply automatically whenever the portal loads.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. GLOBAL THEME (Uncomment any block to enable)
+   -------------------------------------------------------------------------- */
+
+/* [THEME] Sleek Modern Dark Mode */
+/*
+html, body {
+    background-color: #0d1117 !important;
+    color: #e6edf3 !important;
+}
+
+.card, .panel, .widget, .box, .table, .navbar, header, footer {
+    background-color: #161b22 !important;
+    color: #e6edf3 !important;
+    border-color: #30363d !important;
+}
+
+a, .nav-link {
+    color: #58a6ff !important;
+}
+
+table tr:hover {
+    background-color: rgba(56, 139, 253, 0.15) !important;
+}
+*/
+
+/* --------------------------------------------------------------------------
+   2. CUSTOM FONTS & TYPOGRAPHY
+   -------------------------------------------------------------------------- */
+/*
+body, p, span, a, h1, h2, h3, h4, h5, td, th {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif !important;
+    letter-spacing: 0.2px !important;
+}
+*/
+
+/* --------------------------------------------------------------------------
+   3. CLEANUP & HIDING UNWANTED ELEMENTS
+   Add any selector here that you want to hide completely:
+   -------------------------------------------------------------------------- */
+.marquee,
+#announcementModal,
+.ad-banner,
+.alert-warning-unnecessary {
+    display: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. CARDS & CORNERS (Modern rounded feel)
+   -------------------------------------------------------------------------- */
+/*
+.card, .panel, .widget, button, input {
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.2s ease-in-out !important;
+}
+*/

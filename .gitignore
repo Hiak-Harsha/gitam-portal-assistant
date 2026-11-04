@@ -1,0 +1,18 @@
+# Credentials & Private Data
+.env
+*.env
+gitam_auth.json
+
+# Browser Profiles & Caches
+brave_profile/
+browser_profile/
+__pycache__/
+*.pyc
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Downloaded Materials
+GITAM_Materials/
