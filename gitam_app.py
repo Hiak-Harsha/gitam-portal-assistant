@@ -67,11 +67,13 @@ PORTAL_ROUTES = {
     "hallticket": "https://gstudent.gitam.edu/HallTicket",
     "admitcard": "https://gstudent.gitam.edu/HallTicket",
     "profile": "https://gstudent.gitam.edu/Student/Profile",
-    "feedback": "https://gstudent.gitam.edu/Feedback"
+    "feedback": "https://gstudent.gitam.edu/Feedback",
+    "logout": "https://gstudent.gitam.edu/Home/Logout"
 }
 
 COMMAND_ALIASES = {
     "open": ["open", "opn", "oepn", "goto", "go", "launch", "view", "start"],
+    "logout": ["logout", "signout", "logoff", "signoff", "exit_session"],
     "attendance": ["attendance", "attendence", "atendance", "attndance", "att", "attend", "atndnc"],
     "timetable": ["timetable", "timetabl", "schedule", "routine"],
     "courses": ["courses", "course", "corse", "cours", "crs", "subject", "subjects", "lms"],
@@ -190,6 +192,10 @@ def interactive_cli():
 
             elif cmd == "map":
                 show_application_map()
+
+            elif cmd == "logout":
+                print("[LOGOUT] Terminating active GStudent session...")
+                launch_brave_natively("https://gstudent.gitam.edu/Home/Logout")
 
             elif cmd == "style":
                 edit_styles()
